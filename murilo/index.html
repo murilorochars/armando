@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarefa</title>
+    <style>
+    body{
+        background-color: rgb(17, 72, 252);
+        text-align: center;
+    }
+    button{
+        background-color: rgb(11, 197, 230);
+        width: 220px;
+        height: 180px;
+    }
+    #text{
+        color: white;
+        font-size: 20px;
+    }
+    </style>
+    
+</head> 
+
+<body>
+    <h1>Tcc</h1>
+   
+    <button id="info">Resumo do tcc</button>
+    <button id="objetivo">Objetivo Geral</button>
+    <button id="espesifico">Objetivos espesificos</button>
+    <button id="pro">Demonstração dos prototipos</button>
+    <div id="texto">
+        
+    </div>
+</body>
+<script>
+    const button = document.getElementById('info')
+    const button_obj = document.getElementById('objetivo')
+    const button_espe = document.getElementById('espesifico')
+    const button_pro = document.getElementById('pro')
+
+
+button.addEventListener('click',(e)=>{
+    const p = document.createElement('p')
+        const div = document.getElementById('texto')
+        const i = p.innerHTML=` 
+      O tema do nosso tcc é um site de auxilio a contratação de tecnico em enfermagem, vai funcionar com algo parecido como se fosse no estilo do aplicativo da uber.  
+    `
+
+    const a = p.setAttribute('id','text')
+    div.appendChild(p)
+})
+
+button_obj.addEventListener('click',(e)=>{
+    const p = document.createElement('p')
+        const div = document.getElementById('texto')
+        const i = p.innerHTML=` 
+      Objetivo é auxiliar os tecnicos fazer um processo de mediaçao mais eficiente e rapido entre cliente e tecnico,que irá facilitar muito a vida de quem necessita de de algum cuidador e do cuidador que necessita ser contratado  
+    `
+
+    const a = p.setAttribute('id','text')
+    div.appendChild(p)
+})
+
+button_espe.addEventListener('click',(e)=>{
+    const p = document.createElement('p')
+        const div = document.getElementById('texto')
+        const i = p.innerHTML=` 
+        o site em resumo tera tres paginas crucial para o funcionamento, a primeira que somente o usuario ira poder ter acesso, ele ira ter o catalogo de todos os tecnicos disponiveis e caso o usario tenha interrese o site disnponibilizara o meio de contato dos prestadores de serviço, terá a tela em que somente o tecnico logo apos autenticado e autorizado e validado acesso a criaçao de seu perfil e controle de suas informaçoes podendo fazer um crud completo, e as demais telas sao default de informaçoes para experiencia de usuario
+        `
+        const a = p.setAttribute('id','text')
+        
+    div.appendChild(p)
+})
+button_pro.addEventListener('click',(e)=>{
+    const p = document.createElement('img')
+        const div = document.getElementById('texto')
+        const i = p.src= 'https://www.shutterstock.com/shutterstock/photos/2279543395/display_1500/stock-photo-female-medical-assistant-with-clipboard-in-clinic-2279543395.jpg ' 
+
+        const a = p.setAttribute('id','text')
+    div.appendChild(p)
+})
+
+
+</script>
+</html>
