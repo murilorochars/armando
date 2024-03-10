@@ -5,19 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tarefa</title>
     <style>
-    body{
-        background-color: rgb(17, 72, 252);
-        text-align: center;
-    }
-    button{
-        background-color: rgb(11, 197, 230);
-        width: 220px;
-        height: 180px;
-    }
-    #text{
-        color: white;
-        font-size: 20px;
-    }
+    body {
+            background-color: #113dfc;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: #0bc5e6;
+            width: 190px;
+            height: 139px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0898a6;
+        }
+
+        #text {
+            color: #fff;
+            font-size: 15px;
+            margin: 20px 0;
+            text-align: left;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        #texto {
+            max-width: 600px;
+            margin: 0 auto;
+        }
     </style>
     
 </head> 
@@ -44,7 +82,7 @@ button.addEventListener('click',(e)=>{
     const p = document.createElement('p')
         const div = document.getElementById('texto')
         const i = p.innerHTML=` 
-      O tema do nosso tcc é um site de auxilio a contratação de tecnico em enfermagem, vai funcionar com algo parecido como se fosse no estilo do aplicativo da uber.  
+        Este trabalho propõe a criação de um website inovador, inspirado no modelo eficaz de aplicativos como Uber, para simplificar e otimizar o processo de contratação de técnicos em enfermagem. A plataforma visa conectar profissionais qualificados a instituições de saúde e pacientes que necessitam de assistência, proporcionando uma solução eficiente e ágil..  
     `
 
     const a = p.setAttribute('id','text')
@@ -55,7 +93,17 @@ button_obj.addEventListener('click',(e)=>{
     const p = document.createElement('p')
         const div = document.getElementById('texto')
         const i = p.innerHTML=` 
-      Objetivo é auxiliar os tecnicos fazer um processo de mediaçao mais eficiente e rapido entre cliente e tecnico,que irá facilitar muito a vida de quem necessita de de algum cuidador e do cuidador que necessita ser contratado  
+       otimizar o processo de mediação entre clientes em busca de cuidadores e técnicos qualificados é essencial para facilitar a vida de ambas as partes envolvidas. Nosso objetivo é aprimorar a eficiência e rapidez desse processo, proporcionando uma experiência mais ágil e eficaz.
+
+Ao promover uma mediação eficiente, buscamos atender às necessidades específicas dos clientes que buscam cuidadores, assim como dos cuidadores em busca de oportunidades. Essa abordagem visa simplificar a conexão entre as partes interessadas, reduzindo o tempo necessário para encontrar o cuidador ideal e para que os técnicos possam realizar suas mediações de maneira mais efetiva.
+
+Com a implementação dessas melhorias, esperamos criar um ambiente mais acessível e intuitivo, que permita uma correspondência mais rápida e precisa entre clientes e cuidadores. Dessa forma, contribuímos para a melhoria da qualidade de vida daqueles que necessitam de cuidados e também para a otimização do trabalho dos profissionais dedicados a prestar esses cuidados. Estamos comprometidos em tornar esse processo de mediação uma experiência mais eficiente e satisfatória para todos os envolvidos.
+
+
+
+
+
+  
     `
 
     const a = p.setAttribute('id','text')
@@ -70,7 +118,7 @@ button_espe.addEventListener('click',(e)=>{
         `
         const a = p.setAttribute('id','text')
         
-    div.appendChild(p)
+    div.appendChild(p) 
 })
 button_pro.addEventListener('click',(e)=>{
     const p = document.createElement('img')
