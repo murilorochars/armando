@@ -66,7 +66,9 @@
     <button id="info">Resumo do tcc</button>
     <button id="objetivo">Objetivo Geral</button>
     <button id="espesifico">Objetivos espesificos</button>
-    <button id="pro">Demonstração dos prototipos</button>
+    <button id="pro">Demonstração tela principal</button>
+    <button id="proo">Demonstração tela das informaçoes do tecnico</button>
+    <button id="prooo">tela de perfil do tecnico</button>
     <div id="texto">
         
     </div>
@@ -76,6 +78,8 @@
     const button_obj = document.getElementById('objetivo')
     const button_espe = document.getElementById('espesifico')
     const button_pro = document.getElementById('pro')
+    const button_proo = document.getElementById('proo')
+    const button_prooo = document.getElementById('prooo')
 
 
 button.addEventListener('click',(e)=>{
@@ -123,7 +127,31 @@ button_espe.addEventListener('click',(e)=>{
 button_pro.addEventListener('click',(e)=>{
     const p = document.createElement('img')
         const div = document.getElementById('texto')
-        const i = p.src= 'https://www.shutterstock.com/shutterstock/photos/2279543395/display_1500/stock-photo-female-medical-assistant-with-clipboard-in-clinic-2279543395.jpg ' 
+        const i = p.src= './tela.png' 
+        
+        
+
+        const a = p.setAttribute('id','text')
+    div.appendChild(p)
+})
+
+button_proo.addEventListener('click',(e)=>{
+    const p = document.createElement('img')
+        const div = document.getElementById('texto')
+        const i = p.src= './perfiluser.png' 
+        
+        
+
+        const a = p.setAttribute('id','text')
+    div.appendChild(p)
+})
+
+button_prooo.addEventListener('click',(e)=>{
+    const p = document.createElement('img')
+        const div = document.getElementById('texto')
+        const i = p.src= './perfil.png' 
+        
+        
 
         const a = p.setAttribute('id','text')
     div.appendChild(p)
